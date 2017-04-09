@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Overlock" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    header{
+      /*background-color: aqua;*/
+      padding-top: 0px;
+      margin: 0;
+      color: black;
+      align-items: right;
+      position: relative;
+
+    }
+
+    .judul{
+      -webkit-box-shadow: 27px -12px 38px -24px rgba(0,0,0,0.5);
+    -moz-box-shadow: 27px -12px 38px -24px rgba(0,0,0,0.5);
+    box-shadow: 27px -12px 38px -24px rgba(0,0,0,0.5);
+    }
+
+    h1{
+      text-align: right;
+      font-family: 'Overlock', cursive;
+      font-style: normal;
+      padding: 10px 5px 20px 40px;
+      margin: 0;
+      background: rgba(255, 255, 255, 0.55);
+      width: 55%;
+      position: absolute;
+      right: 0px;
+      width: 350px;
+      -webkit-box-shadow: 27px -12px 38px -24px rgba(0,0,0,0.5);
+    -moz-box-shadow: 27px -12px 38px -24px rgba(0,0,0,0.5);
+    box-shadow: 27px -12px 38px -24px rgba(0,0,0,0.5);
+    }
+
+    h2{
+      text-align: center;
+    }
+
+    body{
+      font-size: 15px;
+      margin: 0;
+      background-color: rgba(221, 199, 94, 0.43);
+      background-image: url(header.jpg);
+      background-size: cover;
+      font-family: 'Comfortaa', cursive;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+    }
+
+    /*.tab:nth-child(1) { margin-left: 40%; }*/
+    .tabs {
+      position: relative;
+      min-height: 500px; /* This part sucks */ /*Yeah, really sucks*/
+      clear: both;
+      margin: 25px 0;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 0;
+
+    }
+    .tab {
+      float: none;
+      display: inline-block;
+    }
+    .tab > label {
+      background: #eee;
+      padding: 10px;
+      /*border: 1px solid #ccc;*/
+      margin-left: -1px;
+      position: relative;
+      left: 1px;
+      height: 200px;
+
+    }
+
+    label[for="tab-1"]{
+      background: #FFE00C;
+    }
+
+    label[for="tab-2"]{
+      background: #D5D5D5;
+    }
+
+    label[for="tab-3"]{
+      background: #03A9F3;
+    }
+
+    .tab > [type=radio] {
+      display: none;
+    }
+    .content {
+      position: absolute;
+      top: 28px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 20px;
+      /*border: 1px solid #ccc;*/
+      text-align: left;
+      margin: 0;
+      -webkit-box-shadow: 27px -12px 38px -24px rgba(0,0,0,0.5);
+      -moz-box-shadow: 27px -12px 38px -24px rgba(0,0,0,0.5);
+      box-shadow: 27px -12px 38px -24px rgba(0,0,0,0.5);
+    }
+    .tab > [type=radio]:checked ~ label {
+      /*background: white;*/
+      /*border-bottom: 1px solid white;*/
+      z-index: 2;
+    }
+    .tab > [type=radio]:checked ~ label ~ .content {
+      z-index: 1;
+    }
+
+    .kalimat{
+      padding: 2% 25% 2% 25%;
+      text-align: center;
+      font-size: 1.25em;
+      overflow-y: auto;
+    }
+
+    #home, #about{
+      padding-left: 10%;
+      padding-right: 10%;
+      text-align: justify;
+    }
+
+    #home{
+      background-color: #FFE00C;
+    }
+
+    #contoh_form{
+      overflow-y: auto;
+      background-color: #D5D5D5;
+    }
+
+    #about{
+      background-color: #03A9F3;
+      overflow-y: auto;
+    }
+
+    /*  ---------------------------------------------------------
+        ---------------------------------------------------------
+     */
+
+
+    .tab > div > form > p > label{
+      width: 200px;
+      display: inline-block;
+      text-align: right;
+      margin-right: 10px;
+    }
+
+    #header{
+      background-color: #aaa;
+      height: 100px;
+      #width: 1000px;
+      max-width: 100%;
+    }
+
+    p{
+      margin: 10px;
+    }
+    /*Menghilangkan spin button pada input number*/
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type='number'] {
+        -moz-appearance:textfield;
+    }
+    /*------------------------------------------*/
+
+    input[type=text],
+    input[type=number],
+    input[type=email],
+    input[type=tel],
+    input[type=date]{
+      width: 233px;
+      height: 35px;
+      -webkit-border-radius: 8px/7px;
+         -moz-border-radius: 8px/7px;
+      border-radius: 8px/7px;
+      background-color: #fff;
+      -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+          moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+              box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+      border: solid 1px #cbc9c9;
+      padding-left: 5px;
+    }
+
+    form textarea[name=alamat]{
+      width: 230px;
+      height: 65px;
+      -webkit-border-radius: 8px/7px;
+         -moz-border-radius: 8px/7px;
+      border-radius: 8px/7px;
+      background-color: #fff;
+      -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+          moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+              box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+      border: solid 1px #cbc9c9;
+      padding: 5px;
+      resize: none;
+    }
+
+    .rata *{
+      vertical-align: middle;
+    }
+
+    .data_mahasiswa {
+        padding-top: 20px;
+        padding-bottom: 20px;
+         margin: auto;
+         position: relative;
+         top: 0; left: 0; bottom: 0; right: 0;
+         width: 600px;
+         margin-left: 40%/
+         /*height: 800px;*/
+         border: 1px solid #999; /*jika ingin melihat posisi div anda lebih jelas */
+         background-color: rgba(255, 255, 255, 1);
+
+         /*Bayangan pada form*/
+         -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+            -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+                 box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+
+         /*Rounded Box*/
+         -webkit-border-radius : 8px/7px;
+            -moz-border-radius : 8px/7px;
+                 border-radius : 8px/7px;
+    }
+
+    legend{text-align: center;}
+
+    #tombol_kirim{text-align: center;}
+
+    form fieldset{
+      width: 80%;
+      margin-left: 10%;
+      text-align: center;
+    }
+
+    option{
+      text-align: center;
+      width: 208px;
+    }
+    #judul_form{
+      text-align: center;
+    }
+    /* ---------------------------------------------------------- */
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <br><br>
+      <h1>LATIHAN MEMBUAT FORM</h1>
+      <!-- <h2>Oleh <br> Muhammad Yarjullah Hanif</h2> -->
+      <br>
+      <br>
+      <br>
+      <br>
+    </header>
+    <div class="tabs">
+
+       <div class="tab">
+           <input type="radio" id="tab-1" name="tab-group-1" checked>
+           <label for="tab-1">
+             <i class="fa fa-home" aria-hidden="true"></i>
+             Home
+           </label>
+
+           <div class="content" id="home">
+             <img src="home.png" alt="home">
+             <h2>Selamat Datang</h2>
+             <div class="kalimat">
+               Halaman ini dibuat dalam rangka mengerjakan tugas praktikum web.
+             </div>
+           </div>
+       </div>
+
+       <div class="tab">
+           <input type="radio" id="tab-2" name="tab-group-1">
+           <label for="tab-2">
+             <i class="fa fa-file-text-o" aria-hidden="true"></i>
+             Contoh Form
+           </label>
+
+           <div class="content" id="contoh_form">
+<!-- -------------------------- Form Awal -------------------------- -->
+
+<form class="data_mahasiswa" action="index.html" method="post">
+  <img src="form.png" alt="form">
+  <h2 id="judul_form">Data Mahasiswa</h2>
+  <p>
+    <label for="nama">Nama</label>
+    <input type="text" name="nama" placeholder="isi dengan huruf kapital">
+  </p>
+  <p>
+    <label for="nim">NIM</label>
+    <input type="number" name="nim" value="">
+  </p>
+  <p>
+    <label for="prodi">Program Studi</label>
+    <input type="text" name="prodi" value="">
+  </p>
+  <p class="rata">
+    <label for="alamat">Alamat Lengkap</label>
+    <textarea name="alamat" rows="5" cols="30" class="alamat_area" placeholder="Jalan, No, RT/RW, Kecamatan, Kelurahan, Kabupaten, Provinsi. "></textarea>
+  </p>
+  <p>
+    <label for="kodepos">Kode Pos</label>
+    <input type="number" name="kodepos">
+  </p>
+  <p class="rata">
+    <label for="kontak">Nomor Telepon / HP</label>
+    <input type="tel" name="kontak" value="+62">
+  </p>
+  <p>
+    <label for="email">E-Mail</label>
+    <input type="email" name="email" placeholder="email@domain.com">
+  </p>
+  <p>
+    <label for="tl">Tanggal Lahir</label>
+    <input type="date" name="tl">
+  </p>
+  <p>
+    <label for="agama">Agama</label>
+    <select class="" name="agama">
+      <option>Pilih salah satu</option>
+      <option value="1">Islam</option>
+      <option value="2">Katolik</option>
+      <option value="3">Protestan</option>
+      <option value="4">Hindu</option>
+      <option value="5">Buddha</option>
+      <option value="6">Konghucu</option>
+    </select>
+  </p>
+  <p class="rata">
+    <label for="jk">Jenis Kelamin</label>
+    <input type="radio" name="jk" value="1" checked>Laki-laki
+    <input type="radio" name="jk" value="2">Perempuan
+  </p>
+  <p class="rata" >
+    <label for="minat">Minat</label>
+    <input type="checkbox" name="minat" value="1">Olahraga
+    <input type="checkbox" name="minat" value="2">Seni
+    <input type="checkbox" name="minat" value="3">Teknologi
+  </p>
+  <fieldset>
+    <legend>Unggah Foto</legend>
+    <!-- <label for="foto">Silahkan pilih foto anda</label> -->
+    <input type="file" name="foto">
+  </fieldset>
+  <br>
+  <p id="tombol_kirim">
+    <input type="submit" value="Kirim Data">
+  </p>
+</form>
+
+
+<!-- ---------------------------Form akhir ----------------------- -->
+           </div>
+       </div>
+
+        <div class="tab">
+           <input type="radio" id="tab-3" name="tab-group-1">
+           <label for="tab-3">
+             <i class="fa fa-id-card-o" aria-hidden="true"></i>
+             About
+           </label>
+
+           <div class="content" id="about">
+               <img src="about.png" alt="about">
+               <div class="kalimat">
+                Oleh <br>
+                Muhammad Yarjullah Hanif <br>
+                16520241020 <br><br>
+                Referensi: <br>
+                <a href="https://www.w3schools.com/">Referensi Utama</a> <br>
+                <a href="http://stackoverflow.com/questions/21769137/how-to-center-css-tabs">Membuat Tab dengan CSS</a><br>
+                <a href="http://www.cssmatic.com/box-shadow">Memberikan Bayangan Pada Gambar - Instan </a><br>
+                <a href="http://stackoverflow.com/questions/5235142/how-to-disable-resizable-property-of-textarea">Disable Resizable Property of Textarea</a>
+                <br><br>
+                Sumber Gambar:<br>
+                <a href="http://apps-review-site.blogspot.co.id/2015/06/android-wallpaper.html">Header</a><br>
+                <a href="http://www.freepik.com/free-vector/education-icons-collection_760719.htm">Icons by Freepik</a>
+               </div>
+           </div>
+       </div>
+
+    </div>
+
+  </body>
+</html>
