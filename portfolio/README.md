@@ -15,14 +15,14 @@ Muhammad Yarjullah Hanif (16520241020)
 3. bio.html (berisi biografi singkat yang dikarang-karang :v:)
 
 -------
-:clock7: Waktu Penyelesaian: &plusmn; 7 Jam
+:clock7: **Waktu Penyelesaian:** &plusmn; 7 Jam
 
 -------
-:globe_with_meridians: Referensi:
+:globe_with_meridians: **Referensi**:
 
 [W3Schools](http://w3schools.com/)
 
-[Sekolah Koding - Panduan Membuat Web Portofolio](http://sekolahkoding.com/)
+[Sekolah Koding - Panduan Membuat Portofolio Online](https://sekolahkoding.com/track/membuat-portofolio-online)
 
 Design by:
 
