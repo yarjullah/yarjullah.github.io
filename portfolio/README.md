@@ -17,6 +17,6 @@ Referensi:
 
 Design by:
 
-[Freepik.com](www.freepik.com)
+[Freepik.com](http://www.freepik.com/)
 
 ------
