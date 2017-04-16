@@ -13,6 +13,7 @@ Muhammad Yarjullah Hanif (16520241020)
 1. index.html (berisi nama, foto, link ke resume.html dan bio.html)
 2. resume.html (berisi identitas, pendidikan, pengalaman, skil, dan aktivitas)
 3. bio.html (berisi biografi singkat yang dikarang-karang :v:)
+4. Telah teruji dengan html validator dan css validator tanpa error.
 
 -------
 :clock7: **Waktu Penyelesaian:** &plusmn; 10 Jam
