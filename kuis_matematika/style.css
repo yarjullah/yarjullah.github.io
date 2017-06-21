@@ -1,0 +1,201 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(55, 58, 65);
+	background-image: url(body1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: 37%;
+	color: rgb(51, 118, 207);
+}
+
+.background{
+	background-image: url("background5.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 725px;
+	padding-left: 8%;
+	padding-top: 2%;
+	padding-right: 7%;
+	margin-bottom: 20%;
+	min-width: 1000px;
+}
+
+form p{display: inline-block;}
+h1{text-align: center;	padding-top: 4%;}
+input[type=button]{cursor:pointer; font-weight: bold;}
+
+input{transition: all 0.3s;}
+input:hover{transition: all 0.3s;}
+
+#pertama{margin-top: 0;}
+#kedua{text-align: center;	margin-top: 3%;}
+#ketiga{text-align: center; margin-top: 4%;}
+
+.tempat {
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+	border: none;
+	text-align: center;
+}
+
+input[type=button]:active{
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.new{
+	float: left;
+  font-size: 14px;
+  padding: 11px 11px;
+  width: 96px;
+  height: 60px;
+  white-space: normal;
+}
+.new, .jawab {
+	background-color: #55acee;
+	box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+.new:hover, .jawab:hover {background-color: #6FC6FF;}
+
+.mulai{float: left;margin-left: 1%;}
+.waktu{	margin-left: 24%;}
+.benar{	margin-left: 12%;}
+
+.mulai, .tombol_jawab, .salah {
+	background-color: #e74c3c;
+	box-shadow: 0px 5px 0px 0px #CE3323;
+}
+
+.mulai:hover, .tombol_jawab:hover, .salah:hover{background-color: #FF6656;}
+
+.eval{
+	float: right;
+  font-size: 14px;
+  padding: 11px 15px;
+  width: 96px;
+  height: 57px;
+  white-space: normal;
+}
+.eval, .soal, .benar {
+	background-color: #2ecc71;
+	box-shadow: 0px 5px 0px 0px #15B358;
+}
+.eval:hover, .soal:hover, .benar:hover {background-color: #48E68B;}
+
+.soal{
+	height: 100px;
+	width: 100px;
+	font-size: 40px;
+	text-align: center;
+}
+input[name=operator]{
+	border-radius: 100%;
+	width: 82px;
+	margin: 0 3%;
+}
+input[name=operator], .waktu{
+	background-color: #f1c40f;
+	box-shadow: 0px 5px 0px 0px #D8AB00;
+}
+input[name=operator]:hover, .waktu:hover{background-color: #FFDE29;}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target { visibility: visible; opacity: 1;}
+
+.popup {
+	margin: 44px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 0.5s ease-in-out;
+	height: 78%;
+}
+
+.popup h2 {margin-top: 0; color: #333;}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {color: #06D85F;}
+.popup .content { max-height: 88%; overflow: auto;}
+tr, td{	text-align: center;	padding: 7px 7px;}
+#papan_skor{margin-left: 13%;}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	margin-left: 17%;
+	transition: all 0.4s;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}*/
+
+input[type="radio"] {display: none;}
+
+.pilihan {
+    padding: 8px 11px;
+    cursor: pointer;
+		color:black;
+}
+
+input[type=radio]:hover{
+	color:red;
+}

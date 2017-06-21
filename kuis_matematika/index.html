@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kuis Matematika</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background">
+  <h1>Kuis Matematika</h1>
+    <form name="math">
+
+        <p style="margin-left: 44%;">Sisa Waktu</p>
+        <p style="margin-left: 15%;">Benar</p>
+        <p style="margin-left: 5%;">Salah</p>
+
+      <section id="pertama">
+        <input
+          type="button"
+          value="Permainan Baru"
+          onclick="ulang();"
+          class="tempat new"
+        >
+
+        <div class="dropdown">
+          <input
+            type="button"
+            value="Mulai"
+            onClick="startgame()"
+            class="dropbtn tempat mulai"
+          >
+          <div class="dropdown-content">
+
+            <div class="wadahPil">
+              <label onclick="memilih()">
+                <div class="pilihan" id="pilih1">
+                  <input type="radio" name="pilihan" value="1" checked/>
+                  <span>Acak</span>
+                </div>
+              </label>
+            </div>
+
+            <div class="wadahPil">
+              <label onclick="memilih()">
+                <div class="pilihan" id="pilih2">
+                  <input type="radio" name="pilihan" value="2" />
+                  <span>Penjumlahan</span>
+                </div>
+              </label
+            </div>
+            <div class="wadahPil">
+              <label onclick="memilih()">
+                <div class="pilihan" id="pilih3">
+                  <input type="radio" name="pilihan" value="3" />
+                  <span>Pengurangan</span>
+                </div>
+              </label>
+            </div>
+
+            <div class="wadahPil">
+              <label onclick="memilih()">
+                <div class="pilihan" id="pilih4">
+                  <input type="radio" name="pilihan" value="4" />
+                  <span>Perkalian</span>
+                </div>
+              </label>
+            </div>
+
+            <div class="wadahPil">
+              <label onclick="memilih()">
+                <div class="pilihan" id="pilih5">
+                  <input type="radio" name="pilihan" value="5" />
+                  <span>Pembagian</span>
+                </div>
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+        <input
+          type="text"
+          name="waktunya"
+          size="2"
+          disabled
+          class="tempat waktu"
+        >
+
+        <input
+          type="text"
+          name="points"
+          size="2"
+          value="0"
+          class="tempat benar"
+          disabled
+        >
+
+        <input
+          type="text"
+          name="wrongs"
+          size="2"
+          value="0"
+          class="tempat salah"
+          disabled
+        >
+
+        <input
+          type="button"
+          onclick="evaluasi()"
+          class="tempat eval"
+          value="Soal Evaluasi"
+        >
+      </section>
+
+      <section id="kedua">
+        Pertanyaan: <br><br>
+        <input
+          type="text"
+          name="angka1"
+          size="2"
+          class="tempat soal"
+          disabled
+        >
+        <input
+          type="text"
+          name="operator"
+          size="2"
+          class="tempat soal"
+          disabled
+        >
+        <input
+          type="text"
+          name="angka2"
+          size="2"
+          class="tempat soal"
+          disabled
+        >
+      </section>
+
+      <section id="ketiga">
+        <input
+          type="text"
+          name="answer"
+          size="5"
+          class="tempat jawab"
+          onkeydown = "if (event.keyCode == 13)
+                       document.getElementById('enter').click()"
+        >
+        <input
+          type="button"
+          value="Jawab"
+          class="tempat tombol_jawab"
+          id="enter"
+          onClick="answerit();"
+        >
+      </section>
+
+    </form>
+</div>
+
+<div id="eval" class="overlay">
+	<div class="popup">
+		<h2>Evaluasi</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+      <table id="papan_skor">
+        <tr>
+          <td>No. </td>
+          <td>Jawaban Benar </td>
+          <td>Jawaban Anda </td>
+        </tr>
+      </table>
+		</div>
+	</div>
+</div>
+
+<script src="index.js"> </script>
+
+</body>
+</html>
