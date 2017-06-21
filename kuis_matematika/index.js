@@ -186,36 +186,36 @@ function memilih() {
   terpilih = document.querySelector('input[type=radio]:checked');
   dipilih = terpilih.value;
 
-  if (dipilih==1) {
-    p1.style.backgroundColor = "#55ACEE";
-    p2.style.backgroundColor = "transparent";
-    p3.style.backgroundColor = "transparent";
-    p4.style.backgroundColor = "transparent";
-    p5.style.backgroundColor = "transparent";
-	} else if (dipilih==2) {
-    p1.style.backgroundColor = "transparent";
-    p2.style.backgroundColor = "#55ACEE";
-    p3.style.backgroundColor = "transparent";
-    p4.style.backgroundColor = "transparent";
-    p5.style.backgroundColor = "transparent";
-	} else if (dipilih==3) {
-    p1.style.backgroundColor = "transparent";
-    p2.style.backgroundColor = "transparent";
-    p3.style.backgroundColor = "#55ACEE";
-    p4.style.backgroundColor = "transparent";
-    p5.style.backgroundColor = "transparent";
-	} else if (dipilih==4) {
-    p1.style.backgroundColor = "transparent";
-    p2.style.backgroundColor = "transparent";
-    p3.style.backgroundColor = "transparent";
-    p4.style.backgroundColor = "#55ACEE";
-    p5.style.backgroundColor = "transparent";
-	} else {
-    p1.style.backgroundColor = "transparent";
-    p2.style.backgroundColor = "transparent";
-    p3.style.backgroundColor = "transparent";
-    p4.style.backgroundColor = "transparent";
-    p5.style.backgroundColor = "#55ACEE";
-	}
+    if (dipilih==1) {
+      p1.style.backgroundColor = "#55ACEE";
+      p2.style.backgroundColor = "";
+      p3.style.backgroundColor = "";
+      p4.style.backgroundColor = "";
+      p5.style.backgroundColor = "";
+    } else if (dipilih==2) {
+      p1.style.backgroundColor = "";
+      p2.style.backgroundColor = "#55ACEE";
+      p3.style.backgroundColor = "";
+      p4.style.backgroundColor = "";
+      p5.style.backgroundColor = "";
+    } else if (dipilih==3) {
+      p1.style.backgroundColor = "";
+      p2.style.backgroundColor = "";
+      p3.style.backgroundColor = "#55ACEE";
+      p4.style.backgroundColor = "";
+      p5.style.backgroundColor = "";
+    } else if (dipilih==4) {
+      p1.style.backgroundColor = "";
+      p2.style.backgroundColor = "";
+      p3.style.backgroundColor = "";
+      p4.style.backgroundColor = "#55ACEE";
+      p5.style.backgroundColor = "";
+    } else {
+      p1.style.backgroundColor = "";
+      p2.style.backgroundColor = "";
+      p3.style.backgroundColor = "";
+      p4.style.backgroundColor = "";
+      p5.style.backgroundColor = "#55ACEE";
+    }
 
 }
