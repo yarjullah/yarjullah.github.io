@@ -188,3 +188,8 @@ input[type="radio"] {display: none;}
     cursor: pointer;
     color:black;
 }
+
+.pilihan:hover{
+	background: #55ACEE;
+	trasition: all 0.4s;
+}
